@@ -1,0 +1,31 @@
+class MissionSQM
+{
+	#include "mission.sqm"
+};
+
+enableItemsDropping = 0;
+respawnDialog = 0;
+respawnVehicleDialog = 0	;
+respawnDelay = 5;
+respawnVehicleDelay = 60;
+respawn = "BASE";
+disabledai = 1;
+aiKills = 0;
+weaponPool = 1;
+debriefing = 0;
+author="http://github.com/fearOfSociety/glowing-octo-shame-arma";
+
+// class cfgFunctions {
+// };
+
+// class Params {
+// };
+
+//class Weapons {
+//};
+//class Magazines {
+//};
+
+class Header {
+	gameType = COOP;
+};
