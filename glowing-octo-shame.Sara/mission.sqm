@@ -1,0 +1,222 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cacharacters",
+		"sara",
+		"caair",
+		"cti_buildingsm113_hq",
+		"warfarebuildings_t72_racs"
+	};
+	addOnsAuto[]=
+	{
+		"cacharacters",
+		"cti_buildingsm113_hq",
+		"sara"
+	};
+	randomSeed=745475;
+	class Intel
+	{
+		briefingName="glowing-octo-shame v0.0.0.0 Sahrani";
+		resistanceWest=0.000000;
+		resistanceEast=1.000000;
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={14265.888672,52.883347,11841.493164};
+					id=0;
+					side="WEST";
+					vehicle="SquadLeaderW";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item1
+				{
+					position[]={14268.888672,52.579857,11836.493164};
+					id=1;
+					side="WEST";
+					vehicle="TeamLeaderW";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item2
+				{
+					position[]={14270.888672,52.535332,11836.493164};
+					id=2;
+					side="WEST";
+					vehicle="SoldierWG";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item3
+				{
+					position[]={14272.888672,52.463223,11836.493164};
+					id=3;
+					side="WEST";
+					vehicle="SoldierWAR";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item4
+				{
+					position[]={14274.888672,52.425415,11836.493164};
+					id=4;
+					side="WEST";
+					vehicle="SoldierWAT";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item5
+				{
+					position[]={14276.888672,52.402920,11836.493164};
+					id=5;
+					side="WEST";
+					vehicle="TeamLeaderW";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item6
+				{
+					position[]={14278.888672,52.380413,11836.493164};
+					id=6;
+					side="WEST";
+					vehicle="SoldierWG";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item7
+				{
+					position[]={14280.888672,52.344696,11836.493164};
+					id=7;
+					side="WEST";
+					vehicle="SoldierWAR";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item8
+				{
+					position[]={14282.888672,52.292419,11836.493164};
+					id=8;
+					side="WEST";
+					vehicle="SoldierWSniper";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14263.543945,52.690163,11838.166016};
+					id=10;
+					side="CIV";
+					vehicle="Civilian";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.200000;
+					init="player allowDammage false";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={14222.332031,54.990002,11836.783203};
+			id=9;
+			side="EMPTY";
+			vehicle="M113_MHQ";
+			skill=0.200000;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=455171;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=27139;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"sara"
+	};
+	addOnsAuto[]=
+	{
+		"sara"
+	};
+	randomSeed=7597059;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
