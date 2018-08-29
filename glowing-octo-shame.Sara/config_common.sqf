@@ -5,7 +5,7 @@ pier = ["Land_nav_pier_m_2","Land_nav_pier_m_F"];
 listCrew = [];
 
 botSkill = 0.5;
-maxGroups = 15;
+maxGroups = 0;
 enemyCoefficientCfg = 3;
 playerCoefficient = 1;
 timeFriendlyReinforcements = 120 * 60;
