@@ -3,4 +3,4 @@ if (isServer) then {
 	[] execVM "server\init_server.sqf";
 };
 civilianBasePos = getMarkerPos "respawn_civilian";
-sizeLocation = 500;
+sizeLocation = 250;
