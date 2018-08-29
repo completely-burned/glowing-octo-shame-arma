@@ -3,9 +3,8 @@ _leader = (_this select 0);
 	private ["_grp"];
 	_grp = (_this select 1);
 
-	private["_currentWP","_waypoints","_leaderPos"];
+	private["_waypoints","_leaderPos"];
 	_waypoints = waypoints _grp;
-	_currentWP = 0;
 	_leaderPos = getPos vehicle _leader;
 
 	private ["_units","_vehicles","_landing","_types"];
@@ -157,7 +156,7 @@ _leader = (_this select 0);
 	};
 	private["_wp"];
 	if (count waypoints _grp == 0) then {
-		_wp = _grp addwaypoint [_pos, _maxDist];
+		_wp = _grp addWaypoint [_pos, _maxDist];
 	} else {
 		_wp = [_grp,0];
 	};
