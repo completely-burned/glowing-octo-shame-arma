@@ -18,7 +18,7 @@ class Mission
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.3 Sahrani";
+		briefingName="glowing-octo-shame v0.0.0.4 Sahrani";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;
@@ -30,101 +30,8 @@ class Mission
 	};
 	class Groups
 	{
-		items=2;
+		items=1;
 		class Item0
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=9;
-				class Item0
-				{
-					position[]={14137.880859,57.370960,11835.850586};
-					id=0;
-					side="WEST";
-					vehicle="SquadLeaderW";
-					player="PLAY CDG";
-					leader=1;
-					rank="SERGEANT";
-					skill=0.466667;
-				};
-				class Item1
-				{
-					position[]={14140.880859,57.410706,11830.850586};
-					id=1;
-					side="WEST";
-					vehicle="TeamLeaderW";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.333333;
-				};
-				class Item2
-				{
-					position[]={14142.880859,57.265141,11830.850586};
-					id=2;
-					side="WEST";
-					vehicle="SoldierWG";
-					player="PLAY CDG";
-					skill=0.200000;
-				};
-				class Item3
-				{
-					position[]={14144.880859,57.119484,11830.850586};
-					id=3;
-					side="WEST";
-					vehicle="SoldierWAR";
-					player="PLAY CDG";
-					skill=0.200000;
-				};
-				class Item4
-				{
-					position[]={14146.880859,56.973923,11830.850586};
-					id=4;
-					side="WEST";
-					vehicle="SoldierWAT";
-					player="PLAY CDG";
-					skill=0.200000;
-				};
-				class Item5
-				{
-					position[]={14148.880859,56.828358,11830.850586};
-					id=5;
-					side="WEST";
-					vehicle="TeamLeaderW";
-					player="PLAY CDG";
-					rank="CORPORAL";
-					skill=0.333333;
-				};
-				class Item6
-				{
-					position[]={14150.880859,56.733879,11830.850586};
-					id=6;
-					side="WEST";
-					vehicle="SoldierWG";
-					player="PLAY CDG";
-					skill=0.200000;
-				};
-				class Item7
-				{
-					position[]={14152.880859,56.637802,11830.850586};
-					id=7;
-					side="WEST";
-					vehicle="SoldierWAR";
-					player="PLAY CDG";
-					skill=0.200000;
-				};
-				class Item8
-				{
-					position[]={14154.880859,56.541668,11830.850586};
-					id=8;
-					side="WEST";
-					vehicle="SoldierWSniper";
-					player="PLAY CDG";
-					skill=0.200000;
-				};
-			};
-		};
-		class Item1
 		{
 			side="CIV";
 			class Vehicles
@@ -132,8 +39,9 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14135.536133,57.704235,11832.523438};
-					id=10;
+					position[]={11972.499023,38.965176,11911.541016};
+					azimut=22.670855;
+					id=1;
 					side="CIV";
 					vehicle="Civilian";
 					player="PLAYER COMMANDER";
@@ -149,8 +57,9 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={14222.332031,54.990002,11836.783203};
-			id=9;
+			position[]={11984.470703,39.654800,11905.554688};
+			azimut=22.670855;
+			id=0;
 			side="EMPTY";
 			vehicle="M113_MHQ";
 			skill=0.200000;
@@ -161,24 +70,27 @@ class Mission
 		items=3;
 		class Item0
 		{
-			position[]={14208.169922,54.990002,11842.646484};
+			position[]={11973.663086,38.739609,11916.424805};
 			name="respawn_civilian";
 			type="Dot";
 			colorName="ColorYellow";
+			angle=22.670855;
 		};
 		class Item1
 		{
-			position[]={14463.389648,48.506676,11858.541992};
+			position[]={12074.533203,68.199356,11866.196289};
 			name="respawn_west";
 			type="Dot";
 			colorName="ColorBlue";
+			angle=22.670855;
 		};
 		class Item2
 		{
-			position[]={13948.877930,60.098469,11859.466797};
+			position[]={11892.740234,62.133999,11948.201172};
 			name="respawn_east";
 			type="Dot";
 			colorName="ColorRed";
+			angle=22.670855;
 		};
 	};
 };

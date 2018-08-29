@@ -137,7 +137,7 @@ _leader = (_this select 0);
 		_WaypointCombatMode = "GREEN";
 	};
 
-	if(count _vehicles == 0 && false)then{
+	if(count _vehicles == 0)then{
 		private["_true"];
 		_true = true;
 		private ["_dir","_dist2","_testPos"];
@@ -147,7 +147,6 @@ _leader = (_this select 0);
 			_dist2 = random _maxDist;
 			_testPos = [(_pos select 0) + _dist2*sin _dir, (_pos select 1) + _dist2*cos _dir];
 			_testPos = [_testPos,-1,0] call draga_fnc_isFlatEmpty;
-			hint str _testPos;
 			sleep 0.01;
 			if(count _testPos > 0 or (({alive _x} count _units) == 0))then {_true = false};
 		};
