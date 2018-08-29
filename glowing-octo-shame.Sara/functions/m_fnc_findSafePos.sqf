@@ -94,7 +94,7 @@ while {_visible} do {
 		_dist = ( _dist + (( _minDist / 4 ) max 100 ) );
 		_attempts = 0;
 	};
-	// sleep 0.0001;
+	sleep 0.01;
 
 };
 

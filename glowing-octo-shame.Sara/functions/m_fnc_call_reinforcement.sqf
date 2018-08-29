@@ -80,7 +80,13 @@ if (_patrol)then{
 	_SafePosParams set [1,((_SafePosParams select 1) * 2)];
 };
 
-_pos_resp = getpos player ;//([_pos]+_SafePosParams+[_side] call m_fnc_findSafePos);
+// _pos_resp = ([_pos]+_SafePosParams+[_side] call m_fnc_findSafePos);
+
+if(_side == west)then{
+		_pos_resp = getMarkerPos "respawn_west";
+	}else{
+		_pos_resp = getMarkerPos "respawn_east";
+	};
 
 if(count _pos_resp > 0)then{
 private["_groups"];
@@ -113,7 +119,7 @@ _units = []; _vehicles=[]; _crew = []; _cargo=[];
 	{
 		deleteWaypoint ((waypoints _grp) select 0);
 	};
-
+	_grp spawn draga_fnc_group_init;
 }forEach _groups;
 
 private["_cargo2"];
