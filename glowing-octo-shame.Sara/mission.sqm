@@ -18,7 +18,7 @@ class Mission
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.1 Sahrani";
+		briefingName="glowing-octo-shame v0.0.0.2 Sahrani";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;
@@ -158,20 +158,27 @@ class Mission
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
-			position[]={14167.987305,55.422932,11842.646484};
+			position[]={14208.169922,54.990002,11842.646484};
 			name="respawn_civilian";
 			type="Dot";
 			colorName="ColorYellow";
 		};
 		class Item1
 		{
-			position[]={14170.906250,55.397953,11839.160156};
+			position[]={14463.389648,48.506676,11858.541992};
 			name="respawn_west";
 			type="Dot";
 			colorName="ColorBlue";
+		};
+		class Item2
+		{
+			position[]={13948.877930,60.098469,11859.466797};
+			name="respawn_east";
+			type="Dot";
+			colorName="ColorRed";
 		};
 	};
 };
