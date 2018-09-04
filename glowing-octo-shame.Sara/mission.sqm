@@ -18,7 +18,7 @@ class Mission
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.4 Sahrani";
+		briefingName="glowing-octo-shame v0.0.0.5 Sahrani";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;
@@ -30,7 +30,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			side="CIV";
@@ -39,8 +39,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11972.499023,38.965176,11911.541016};
-					azimut=22.670855;
+					position[]={11971.662109,39.091358,11909.029297};
+					azimut=22.670900;
 					id=1;
 					side="CIV";
 					vehicle="Civilian";
@@ -51,13 +51,106 @@ class Mission
 				};
 			};
 		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={11971.486328,38.958820,11912.919922};
+					id=2;
+					side="WEST";
+					vehicle="SquadLeaderW";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item1
+				{
+					position[]={11974.486328,39.010601,11907.919922};
+					id=3;
+					side="WEST";
+					vehicle="TeamLeaderW";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item2
+				{
+					position[]={11976.486328,38.925072,11907.919922};
+					id=4;
+					side="WEST";
+					vehicle="SoldierWG";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item3
+				{
+					position[]={11978.486328,38.839592,11907.919922};
+					id=5;
+					side="WEST";
+					vehicle="SoldierWAR";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item4
+				{
+					position[]={11980.486328,38.861458,11907.919922};
+					id=6;
+					side="WEST";
+					vehicle="SoldierWAT";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item5
+				{
+					position[]={11982.486328,39.216873,11907.919922};
+					id=7;
+					side="WEST";
+					vehicle="TeamLeaderW";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.333333;
+				};
+				class Item6
+				{
+					position[]={11984.486328,39.572285,11907.919922};
+					id=8;
+					side="WEST";
+					vehicle="SoldierWG";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item7
+				{
+					position[]={11986.486328,39.927914,11907.919922};
+					id=9;
+					side="WEST";
+					vehicle="SoldierWAR";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+				class Item8
+				{
+					position[]={11988.486328,40.283329,11907.919922};
+					id=10;
+					side="WEST";
+					vehicle="SoldierWSniper";
+					player="PLAY CDG";
+					skill=0.200000;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
 		items=1;
 		class Item0
 		{
-			position[]={11984.470703,39.654800,11905.554688};
+			position[]={11983.252930,39.125893,11914.232422};
 			azimut=22.670855;
 			id=0;
 			side="EMPTY";
