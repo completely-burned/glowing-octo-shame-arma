@@ -31,7 +31,6 @@ for [{_i = 0}, {_i < count (missionConfigFile >> "MissionSQM" >> "Mission" >> "G
 			};
 		};
 };
-m_friendlySide = [west];
 
 ///--- создание сторон
 if (( sideLogic CountSide AllUnits ) < 1) then { CreateCenter sideLogic };
