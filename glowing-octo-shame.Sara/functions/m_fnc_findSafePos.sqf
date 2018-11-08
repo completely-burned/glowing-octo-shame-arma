@@ -40,7 +40,8 @@ _visible = true;
 private ["_nearRoads"];
 while {_visible} do {
 	if(_attempts2 >= 5000)exitWith{_testPos = []};
-
+	if (format ["%1", _posX] == "scalar bool array string 0xe0ffffef") exitWith {_testPos = []};
+	if (format ["%1", _posY] == "scalar bool array string 0xe0ffffef") exitWith {_testPos = []};
 		private ["_dir","_dist2"];
 		_dir = random 360;
 		_dist2 = (_minDist + random (_dist - _minDist));
@@ -94,9 +95,11 @@ while {_visible} do {
 		_dist = ( _dist + (( _minDist / 4 ) max 100 ) );
 		_attempts = 0;
 	};
-	sleep 0.01;
+	sleep 0.001;
 
 };
+
+// if(count _testPos > 0)then {"test2" setMarkerPos _testPos};
 
 	// diag_log format ["m_fnc_findSafePos.sqf 119, %1", time];
 
