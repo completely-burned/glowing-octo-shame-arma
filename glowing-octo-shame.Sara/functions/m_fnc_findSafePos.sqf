@@ -38,11 +38,11 @@ _visible = true;
 // private ["_groupPosList"];
 // _groupPosList=[0];
 private ["_nearRoads"];
+private ["_dir","_dist2"];
 while {_visible} do {
 	if(_attempts2 >= 5000)exitWith{_testPos = []};
 	if (format ["%1", _posX] == "scalar bool array string 0xe0ffffef") exitWith {_testPos = []};
 	if (format ["%1", _posY] == "scalar bool array string 0xe0ffffef") exitWith {_testPos = []};
-		private ["_dir","_dist2"];
 		_dir = random 360;
 		_dist2 = (_minDist + random (_dist - _minDist));
 		_testPos = [_posX + _dist2*sin _dir, _posY + _dist2*cos _dir];
