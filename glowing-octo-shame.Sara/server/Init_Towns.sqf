@@ -1,6 +1,6 @@
 ///--- бардак, комментировать нечего
 // waitUntil {!isNil "bis_fnc_init"};
-locationTypes=["Name","NameLocal","NameVillage","NameCity","NameCityCapital"];
+locationTypes=["Name","NameVillage","NameCity","NameCityCapital"];
 // if(worldName == "Shapur_BAF")then{
 	// locationTypes=["NameLocal","NameVillage","NameCity","NameCityCapital"];
 // };
