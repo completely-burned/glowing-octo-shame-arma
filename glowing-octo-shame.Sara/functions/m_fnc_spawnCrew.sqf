@@ -15,14 +15,8 @@ if ((count _this) > 2) then {
 	_crewType = (_typicalCargo select 0);
 }else{
 	_typicalCargo=[];
-	if (((getNumber (_entry >> "side")) call m_fnc_getSide) == side _grp) then {
 		_crewType = getText (_entry >> "crew");
-	}else{
-		_crewType = ([side _grp, _type] call m_fnc_defaultCrew);
-	};
 };
-
-hint str _crewType;
 
 _hasDriver = getNumber (_entry >> "hasDriver");
 

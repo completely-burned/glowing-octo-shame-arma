@@ -21,7 +21,7 @@ _leader = (_this select 0);
 				if (group effectiveCommander _veh == _grp) then {
 					_vehicles set [count _vehicles, _veh];
 					_types set [count _types, typeOf _veh];
-					if(crew _veh - driver _veh - gunner _veh - commander _veh > 0)then{
+					if(count (((crew _veh - [driver _veh]) - [gunner _veh]) - [commander _veh]) > 0)then{
 						_landing = true;
 					};
 				};
