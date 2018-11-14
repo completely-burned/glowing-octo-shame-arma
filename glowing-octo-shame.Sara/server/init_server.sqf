@@ -85,3 +85,5 @@ _path = "server\";
 [] execVM (_path + "updateReinforcement.sqf");
 [] execVM (_path + "gc.sqf");
 [] execVM (_path + "units.sqf");
+[] execVM (_path + "init_towns.sqf");
+[] execVM (_path + "server_update_location.sqf");

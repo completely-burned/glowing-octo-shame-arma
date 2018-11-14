@@ -2,6 +2,7 @@
 
 waitUntil {!isNil "m_fnc_init"};
 waitUntil {!isNil "GroupsStarted"};
+waitUntil {!isNil "locationStarted"};
 
 private["_minFPS","_minGroups","_maxGroups","_enemyCoefficient","_playerCoefficient","_enemyCoefficientCfg","_timeFriendlyReinforcements"];
 
