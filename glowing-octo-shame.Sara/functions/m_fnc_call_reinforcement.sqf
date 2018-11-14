@@ -124,10 +124,8 @@ _cargo2 = _cargo - (units (_groups select 0));
 	_x enableAI "TARGET";
 	_x enableAI "AUTOTARGET";
 	_x setSkill ["commanding", 1];
+	_x call m_fnc_vehInit;
 } foreach _units + _vehicles;
-
-AllUnits = AllUnits + _units;
-allGroups = allGroups + _groups;
 
 private["_random2","_random5","_random10"];
 _random2 = random 2; _random5 = random 5; _random10 = random 10;
