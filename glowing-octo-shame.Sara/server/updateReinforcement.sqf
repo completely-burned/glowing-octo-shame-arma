@@ -54,7 +54,7 @@ while{true}do{
 	if(!isNil {CivilianLocationStartTime})then{
 		private["_time"];
 		_time = time - CivilianLocationStartTime;
-		_enemyCoefficient =  timeFriendlyReinforcements / _time;
+		_enemyCoefficient =  timeFriendlyReinforcements / (_time max 0.0001);
 		_enemyCoefficient = (enemyCoefficientCfg min _enemyCoefficient) max 1;
 	}else{
 		_enemyCoefficient = enemyCoefficientCfg;
