@@ -195,22 +195,6 @@ class Mission
 			angle=22.670855;
 		};
 	};
-	class Sensors
-	{
-		items=1;
-		class Item0
-		{
-			position[]={11998.436523,42.125408,11910.194336};
-			activationBy="ALPHA";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="hint str AllUnits;";
-			class Effects
-			{
-			};
-		};
-	};
 };
 class Intro
 {
