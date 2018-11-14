@@ -1,5 +1,7 @@
-AllUnits=[];allGroups=[];patrolGrps=[];
-
+allGroups=[];patrolGrps=[];
+if (isNil {AllUnits}) then {
+    AllUnits=[];
+};
 m_friendlySide = [];
 private ["_i","_ii"];
 for [{_i = 0}, {_i < count (missionConfigFile >> "MissionSQM" >> "Mission" >> "Groups")}, {_i = _i + 1}] do {

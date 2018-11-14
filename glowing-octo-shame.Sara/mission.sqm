@@ -47,7 +47,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.200000;
-					init="player allowDammage false";
+					init="player allowDammage false;if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 			};
 		};
@@ -67,6 +67,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item1
 				{
@@ -77,6 +78,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.333333;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item2
 				{
@@ -86,6 +88,7 @@ class Mission
 					vehicle="SoldierWG";
 					player="PLAY CDG";
 					skill=0.200000;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item3
 				{
@@ -95,6 +98,7 @@ class Mission
 					vehicle="SoldierWAR";
 					player="PLAY CDG";
 					skill=0.200000;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item4
 				{
@@ -104,6 +108,7 @@ class Mission
 					vehicle="SoldierWAT";
 					player="PLAY CDG";
 					skill=0.200000;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item5
 				{
@@ -114,6 +119,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.333333;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item6
 				{
@@ -123,6 +129,7 @@ class Mission
 					vehicle="SoldierWG";
 					player="PLAY CDG";
 					skill=0.200000;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item7
 				{
@@ -132,6 +139,7 @@ class Mission
 					vehicle="SoldierWAR";
 					player="PLAY CDG";
 					skill=0.200000;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 				class Item8
 				{
@@ -141,6 +149,7 @@ class Mission
 					vehicle="SoldierWSniper";
 					player="PLAY CDG";
 					skill=0.200000;
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 			};
 		};
@@ -184,6 +193,22 @@ class Mission
 			type="Dot";
 			colorName="ColorRed";
 			angle=22.670855;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={11998.436523,42.125408,11910.194336};
+			activationBy="ALPHA";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="hint str AllUnits;";
+			class Effects
+			{
+			};
 		};
 	};
 };
