@@ -6,19 +6,17 @@ class Mission
 		"cacharacters",
 		"sara",
 		"caair",
-		"cti_buildingsm113_hq",
 		"warfarebuildings_t72_racs"
 	};
 	addOnsAuto[]=
 	{
 		"cacharacters",
-		"cti_buildingsm113_hq",
 		"sara"
 	};
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.18 Sahrani";
+		briefingName="glowing-octo-shame v0.0.0.18 Sahrani blufor";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;
@@ -30,28 +28,8 @@ class Mission
 	};
 	class Groups
 	{
-		items=2;
+		items=1;
 		class Item0
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={11971.662109,39.091358,11909.029297};
-					azimut=22.670900;
-					id=1;
-					side="CIV";
-					vehicle="Civilian";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
-				};
-			};
-		};
-		class Item1
 		{
 			side="WEST";
 			class Vehicles
@@ -59,11 +37,11 @@ class Mission
 				items=9;
 				class Item0
 				{
-					position[]={11971.486328,38.958820,11912.919922};
-					id=2;
+					position[]={14247.965820,54.111717,11841.779297};
+					id=0;
 					side="WEST";
 					vehicle="SquadLeaderW";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
@@ -71,8 +49,8 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={11974.486328,39.010601,11907.919922};
-					id=3;
+					position[]={14250.965820,53.714016,11836.779297};
+					id=1;
 					side="WEST";
 					vehicle="TeamLeaderW";
 					player="PLAY CDG";
@@ -82,8 +60,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={11976.486328,38.925072,11907.919922};
-					id=4;
+					position[]={14252.965820,53.574207,11836.779297};
+					id=2;
 					side="WEST";
 					vehicle="SoldierWG";
 					player="PLAY CDG";
@@ -92,8 +70,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={11978.486328,38.839592,11907.919922};
-					id=5;
+					position[]={14254.965820,53.364010,11836.779297};
+					id=3;
 					side="WEST";
 					vehicle="SoldierWAR";
 					player="PLAY CDG";
@@ -102,8 +80,8 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={11980.486328,38.861458,11907.919922};
-					id=6;
+					position[]={14256.965820,53.143429,11836.779297};
+					id=4;
 					side="WEST";
 					vehicle="SoldierWAT";
 					player="PLAY CDG";
@@ -112,8 +90,8 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={11982.486328,39.216873,11907.919922};
-					id=7;
+					position[]={14258.965820,52.922981,11836.779297};
+					id=5;
 					side="WEST";
 					vehicle="TeamLeaderW";
 					player="PLAY CDG";
@@ -123,8 +101,8 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={11984.486328,39.572285,11907.919922};
-					id=8;
+					position[]={14260.965820,52.761986,11836.779297};
+					id=6;
 					side="WEST";
 					vehicle="SoldierWG";
 					player="PLAY CDG";
@@ -133,8 +111,8 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={11986.486328,39.927914,11907.919922};
-					id=9;
+					position[]={14262.965820,52.664589,11836.779297};
+					id=7;
 					side="WEST";
 					vehicle="SoldierWAR";
 					player="PLAY CDG";
@@ -143,8 +121,8 @@ class Mission
 				};
 				class Item8
 				{
-					position[]={11988.486328,40.283329,11907.919922};
-					id=10;
+					position[]={14264.965820,52.632591,11836.779297};
+					id=8;
 					side="WEST";
 					vehicle="SoldierWSniper";
 					player="PLAY CDG";
@@ -154,45 +132,32 @@ class Mission
 			};
 		};
 	};
-	class Vehicles
-	{
-		items=1;
-		class Item0
-		{
-			position[]={11983.252930,39.125893,11914.232422};
-			azimut=22.670855;
-			id=0;
-			side="EMPTY";
-			vehicle="M113_MHQ";
-			skill=0.200000;
-		};
-	};
 	class Markers
 	{
 		items=3;
 		class Item0
 		{
-			position[]={11973.663086,38.739609,11916.424805};
+			position[]={14210.902344,54.990002,11850.189453};
 			name="respawn_civilian";
-			type="Dot";
+			type="Empty";
 			colorName="ColorYellow";
-			angle=22.670855;
+			angle=22.670900;
 		};
 		class Item1
 		{
-			position[]={12074.533203,68.199356,11866.196289};
+			position[]={14214.733398,54.990002,11852.852539};
 			name="respawn_west";
-			type="Dot";
+			type="Empty";
 			colorName="ColorBlue";
-			angle=22.670855;
+			angle=22.670900;
 		};
 		class Item2
 		{
-			position[]={11892.740234,62.133999,11948.201172};
+			position[]={14208.034180,54.990002,11855.091797};
 			name="respawn_east";
-			type="Dot";
+			type="Empty";
 			colorName="ColorRed";
-			angle=22.670855;
+			angle=22.670900;
 		};
 	};
 };
