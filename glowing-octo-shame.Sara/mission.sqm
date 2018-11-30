@@ -18,7 +18,7 @@ class Mission
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.16 Sahrani";
+		briefingName="glowing-octo-shame v0.0.0.17 Sahrani";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;
@@ -47,7 +47,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.200000;
-					init="player allowDammage false;if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
 				};
 			};
 		};
