@@ -18,7 +18,7 @@ class Mission
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.17 Sahrani";
+		briefingName="glowing-octo-shame v0.0.0.18 Sahrani";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;
@@ -47,7 +47,7 @@ class Mission
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 			};
 		};
@@ -67,7 +67,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.466667;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item1
 				{
@@ -78,7 +78,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.333333;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item2
 				{
@@ -88,7 +88,7 @@ class Mission
 					vehicle="SoldierWG";
 					player="PLAY CDG";
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item3
 				{
@@ -98,7 +98,7 @@ class Mission
 					vehicle="SoldierWAR";
 					player="PLAY CDG";
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item4
 				{
@@ -108,7 +108,7 @@ class Mission
 					vehicle="SoldierWAT";
 					player="PLAY CDG";
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item5
 				{
@@ -119,7 +119,7 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.333333;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item6
 				{
@@ -129,7 +129,7 @@ class Mission
 					vehicle="SoldierWG";
 					player="PLAY CDG";
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item7
 				{
@@ -139,7 +139,7 @@ class Mission
 					vehicle="SoldierWAR";
 					player="PLAY CDG";
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 				class Item8
 				{
@@ -149,7 +149,7 @@ class Mission
 					vehicle="SoldierWSniper";
 					player="PLAY CDG";
 					skill=0.200000;
-					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];";
+					init="if(isNil {AllUnits})then{AllUnits=[]};AllUnits=AllUnits+[this];if(isNil {allGroups})then{allGroups=[]};allGroups=allGroups+[group this];";
 				};
 			};
 		};
