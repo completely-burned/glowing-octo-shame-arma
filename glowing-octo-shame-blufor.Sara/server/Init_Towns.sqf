@@ -71,7 +71,7 @@ locationNext={
 
 
 // CivilianLocation = locationNull;
-civilianBasePos = position player;
+waitUntil {!isNil "civilianBasePos"};
 sizeLocation = 250;
 [] call locationNext;
 locationStarted = true;

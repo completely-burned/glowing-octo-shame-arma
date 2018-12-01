@@ -16,7 +16,7 @@ class Mission
 	randomSeed=745475;
 	class Intel
 	{
-		briefingName="glowing-octo-shame v0.0.0.19 Sahrani blufor";
+		briefingName="glowing-octo-shame v0.0.0.20 Sahrani blufor";
 		resistanceWest=0.000000;
 		resistanceEast=1.000000;
 		startWeather=0.100000;

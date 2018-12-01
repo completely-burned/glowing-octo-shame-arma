@@ -20,6 +20,11 @@ for [{_i = 0}, {_i < count (missionConfigFile >> "MissionSQM" >> "Mission" >> "G
 					if (getText (_unitCFG >> "player") in ["PLAY CDG","PLAYER COMMANDER"]) then {
 						_isPlayable = true;
 					};
+          if (getText (_unitCFG >> "player") == "PLAYER COMMANDER") then {
+            private ["_pos"];
+            _pos = getArray (_unitCFG >> "position");
+            civilianBasePos = [_pos select 0, _pos select 2];
+          };
 					if (_isPlayable) then {
 						switch (_sideCFG) do {
 							case "EAST": {if !(east in m_friendlySide) then {m_friendlySide = m_friendlySide + [east]}};
