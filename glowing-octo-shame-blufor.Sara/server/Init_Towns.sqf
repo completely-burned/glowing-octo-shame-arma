@@ -65,15 +65,10 @@ locationNext={
 		AllGroupsGuerrila 	= ([AllGroupsGuerrilaOld, _grps_rarity] call _fnc4);
 	};
 
-	"MainTown" setMarkerPos civilianBasePos;
-	"MainTown" setMarkerSize [_sizeLocation,_sizeLocation];
 	sizeLocation=_sizeLocation;
 	publicVariable "sizeLocation";
 };
 
-CreateMarker ["MainTown", getPos player];
-"MainTown" setMarkerShape "ELLIPSE";
-"MainTown" setMarkerColor "ColorBlack";
 
 // CivilianLocation = locationNull;
 civilianBasePos = position player;

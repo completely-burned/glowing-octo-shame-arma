@@ -15,7 +15,6 @@ while{true}do{
 		if(sizeLocation != _sizeLocation)then{
 			sizeLocation = +_sizeLocation;
 			publicVariable "sizeLocation";
-			"MainTown" setMarkerSize [_sizeLocation,_sizeLocation];
 		};
 
 		Private["_objects"];
